@@ -8,7 +8,5 @@ def hello_world():
 
 if __name__ == "__main__":
     app.run(debug=True)
-    a=100
-    while a >0:
-        print("Shreyash Maurya")
+    
     
