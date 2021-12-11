@@ -1,4 +1,4 @@
-#from flask import Flask, render_template
+"""#from flask import Flask, render_template
 import schedule
 #import datetime
 #app = Flask(__name__)
@@ -17,3 +17,11 @@ def job():
 schedule.every(10).seconds.do(job)
 while True:
     schedule.run_pending()
+"""
+from os import environ
+from flask import Flask
+
+app = Flask(__name__)
+app.run(environ.get('PORT'))
+
+print("Hello world" * 100)
